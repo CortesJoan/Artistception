@@ -1988,6 +1988,10 @@ MonoBehaviour:
     state: 4
     show: 1
     deleteQuestion: 0
+  - s: Comentar los scripts
+    state: 4
+    show: 1
+    deleteQuestion: 0
 --- !u!1 &994303563
 GameObject:
   m_ObjectHideFlags: 0
