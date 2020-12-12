@@ -7,7 +7,7 @@ public class MainMenuBehaviour : MonoBehaviour {
 	public GameObject optionsMenu;
 	SoundManager soundManager;
 
-
+	//TODO comentar todo 
 	public void LoadLevel(string levelName){
 		SceneManager.LoadScene (levelName);
 	}
