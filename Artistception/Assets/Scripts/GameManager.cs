@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cinemachine;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,6 +27,10 @@ public class GameManager : MonoBehaviour
         ChangeLevel(level);
 
     }
+    public void OnLevelWasLoaded(int level)
+    {
+        player = FindObjectOfType<PlayerBehaviour>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -45,8 +50,11 @@ public class GameManager : MonoBehaviour
 
     internal void KillPlayer()
     {
-        Instantiate(player);
+
+        player = Instantiate(player);
         player.transform.position = this.transform.position;
+       FindObjectOfType<CinemachineVirtualCamera>().Follow = player.gameObject.transform;
+        
         //   player.transform.position = GetLastCheckPoint();
     }
 

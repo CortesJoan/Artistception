@@ -7,7 +7,7 @@ public class PlayerBehaviour : MonoBehaviour
 {
     Rigidbody2D rb2d;
     public float moveSpeed = 3;
-
+    public bool isUsingThisMovement = true;
     public const string RIGHT = "right";
     public const string LEFT = "left";
     public const string JUMP = "space";
@@ -22,6 +22,7 @@ public class PlayerBehaviour : MonoBehaviour
     public GameObject hitEffect;
     public float jumpForce;
     private GameManager gameManager;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -30,8 +31,10 @@ public class PlayerBehaviour : MonoBehaviour
     // Los inputs se manejan en el Update
     void Update()
     {
-        InputHandler();
-
+        if (isUsingThisMovement)
+        {
+            InputHandler();
+        }
     }
     bool pressedJumping;
 
@@ -39,42 +42,10 @@ public class PlayerBehaviour : MonoBehaviour
     // Y en el FixedUpdate se hace el movimiento
     private void FixedUpdate()
     {
-
-
-
-        if (IsInputInList(RIGHT))
+        if (isUsingThisMovement)
         {
-            if (!canJump)
-            {
-
-                rb2d.AddForce(new Vector2(moveSpeed / 2, 0), ForceMode2D.Impulse);
-
-            }
-            else
-            {
-                rb2d.AddForce(new Vector2(moveSpeed, 0), ForceMode2D.Impulse);
-            }
+            PerformInputs();
         }
-        if (IsInputInList(LEFT))
-        {
-
-            if (!canJump)
-            {
-                rb2d.AddForce(new Vector2(-moveSpeed / 2, 0), ForceMode2D.Impulse);
-
-            }
-            else
-            {
-                rb2d.AddForce(new Vector2(-moveSpeed, 0), ForceMode2D.Impulse);
-
-            }
-        }
-        if (IsInputInList(JUMP))
-        {
-            CheckGroundStatus();
-            Debug.Log("aaaaaaaaaa");
-        }
-        inputList.Clear();
     }
     /// <summary>
     /// Metodo que tira entre 1 a 3 raycast para comprobar si se esta tocando el suelo o no  el primero hacia abajo y los otros 2 en diagonal para assegurarse de poder saltar en bordes
@@ -160,27 +131,67 @@ public class PlayerBehaviour : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag.Equals("Dead")) {
-            rb2d.simulated = false;
+        if (collision.gameObject.tag.Equals("Dead"))
+        {
+             
             GameObject blood = Instantiate(hitEffect);
             blood.transform.parent = this.transform;
             blood.transform.localPosition = new Vector3(0, 2, 0);
             blood.GetComponent<ParticleSystem>().Play();
-          //  this.GetComponent<SpriteRenderer>().enabled = false;
+            //  this.GetComponent<SpriteRenderer>().enabled = false;
             Debug.Log("muerto");
             StartCoroutine("WaitForDeath");
             ///todo death sound
-          
-            
 
-       
+
+
+
         }
     }
-    public IEnumerator WaitForDeath() {
+    public IEnumerator WaitForDeath()
+    {
         yield return new WaitForSeconds(2);
-        
+
         gameManager.KillPlayer();
         Destroy(this.gameObject);
+        
 
+    }
+    public void PerformInputs()
+    {
+
+        if (IsInputInList(RIGHT))
+        {
+            if (!canJump)
+            {
+
+                rb2d.AddForce(new Vector2(moveSpeed / 2, 0), ForceMode2D.Impulse);
+
+            }
+            else
+            {
+                rb2d.AddForce(new Vector2(moveSpeed, 0), ForceMode2D.Impulse);
+            }
+        }
+        if (IsInputInList(LEFT))
+        {
+
+            if (!canJump)
+            {
+                rb2d.AddForce(new Vector2(-moveSpeed / 2, 0), ForceMode2D.Impulse);
+
+            }
+            else
+            {
+                rb2d.AddForce(new Vector2(-moveSpeed, 0), ForceMode2D.Impulse);
+
+            }
+        }
+        if (IsInputInList(JUMP))
+        {
+            CheckGroundStatus();
+            Debug.Log("aaaaaaaaaa");
+        }
+        inputList.Clear();
     }
 }
