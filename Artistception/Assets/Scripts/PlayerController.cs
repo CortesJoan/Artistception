@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public int DeploymentHeight = 3;
     public List<String> inputList;
     public float jumpForce;
-  
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -35,7 +34,7 @@ public class PlayerController : MonoBehaviour
     bool pressedJumping;
 
 
-     // Y en el FixedUpdate se hace el movimiento
+    // Y en el FixedUpdate se hace el movimiento
     private void FixedUpdate()
     {
 
@@ -45,7 +44,7 @@ public class PlayerController : MonoBehaviour
         {
             if (!canJump)
             {
-                
+
                 rb2d.AddForce(new Vector2(moveSpeed / 2, 0), ForceMode2D.Impulse);
 
             }
@@ -81,7 +80,7 @@ public class PlayerController : MonoBehaviour
     void CheckGroundStatus()
     {
 
-        if (DrawRay(Vector2.down,Color.red) || DrawRay(Quaternion.Euler(-0.2f, 0, -45) * Vector3.down,Color.black) || DrawRay( new Vector3(0.2f,-1,0),Color.green))
+        if (DrawRay(Vector2.down, Color.red) || DrawRay(Quaternion.Euler(-0.2f, 0, -45) * Vector3.down, Color.black) || DrawRay(new Vector3(0.2f, -1, 0), Color.green))
         {
             rb2d.velocity = Vector2.zero;
             rb2d.AddForce(new Vector2(0, moveSpeed * jumpForce - rb2d.velocity.x * this.acceleration), ForceMode2D.Impulse);
@@ -103,7 +102,7 @@ public class PlayerController : MonoBehaviour
     /// <param name="direction"> la direction hacia donde ira el rayo en vector2</param>
     /// <param name="color"> el color del rayo</param>
     /// <returns> un booleano para saber si ha collisionado o no</returns>
-    private bool DrawRay(Vector2 direction , Color color)
+    private bool DrawRay(Vector2 direction, Color color)
     {
         Debug.DrawRay(transform.position, Vector3.down, color);
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, DeploymentHeight, groundMask);
@@ -114,7 +113,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-         
+
             return true;
         }
     }
@@ -123,7 +122,8 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     /// <param name="input"> el nombre del input a mirar</param>
     /// <returns> si esta o no </returns>
-    public bool IsInputInList(String input) {
+    public bool IsInputInList(String input)
+    {
 
         return inputList.Contains(input);
     }
@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             inputList.Add(LEFT);
-      
+
 
 
         }
