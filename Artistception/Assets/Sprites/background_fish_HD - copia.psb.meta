@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: 84f73d53843b9d74baeeb5477fb4ac33
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO
+    100002: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Cuchillo
+    100004: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Fondo
+    100006: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Pez
+      gordo naranja
+    100008: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Pez
+      naranja
+    100010: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Reloj
+    400000: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Transform
+    400002: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Cuchillo/Transform
+    400004: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Fondo/Transform
+    400006: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Pez
+      gordo naranja/Transform
+    400008: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Pez
+      naranja/Transform
+    400010: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Reloj/Transform
+    2800000: background_fish_HD - copia Texture
+    21200000: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Cuchillo/SpriteRenderer
+    21200002: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Fondo/SpriteRenderer
+    21200004: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Pez
+      gordo naranja/SpriteRenderer
+    21200006: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Pez
+      naranja/SpriteRenderer
+    21200008: background_fish_HD - copia Prefab/background_fish_HD - copia Texture_GO/Reloj/SpriteRenderer
+    21300000: 92da9fac9c59dd244b477ed58f958a0d
+    21300002: 0fd049d5498c6534ca5e2c5076baba25
+    21300004: 13957f2a808186d45a7a0f843007ff7c
+    21300006: c1554d4b79e492b46aac6068fc6bcc1a
+    21300008: 7a9044bc4e7275b4882e5ae9d340205c
+    100100000: background_fish_HD - copia Prefab
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Cuchillo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 10586
+      y: 2009
+      width: 322
+      height: 1314
+    spriteID: 92da9fac9c59dd244b477ed58f958a0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6635, y: -192}
+  - name: Reloj
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 10586
+      y: 4
+      width: 956
+      height: 1997
+    spriteID: 0fd049d5498c6534ca5e2c5076baba25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5641, y: -3951}
+  - name: Pez naranja
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 10586
+      y: 3331
+      width: 809
+      height: 237
+    spriteID: 13957f2a808186d45a7a0f843007ff7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3887, y: 210}
+  - name: Pez gordo naranja
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11550
+      y: 4
+      width: 1714
+      height: 806
+    spriteID: c1554d4b79e492b46aac6068fc6bcc1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4515, y: -4381}
+  - name: Fondo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 10574
+      height: 8298
+    spriteID: 7a9044bc4e7275b4882e5ae9d340205c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 8192
+  importedTextureHeight: 8192
+  documentSize: {x: 10574, y: 8298}
+  textureActualWidth: 16384
+  textureActualHeight: 16384
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Cuchillo
+    spriteName: Cuchillo
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 92da9fac9c59dd244b477ed58f958a0d
+    layerID: 8
+    mosaicPosition: {x: 10586, y: 2009}
+  - name: Reloj
+    spriteName: Reloj
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0fd049d5498c6534ca5e2c5076baba25
+    layerID: 17
+    mosaicPosition: {x: 10586, y: 4}
+  - name: Pez naranja
+    spriteName: Pez naranja
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 13957f2a808186d45a7a0f843007ff7c
+    layerID: 5
+    mosaicPosition: {x: 10586, y: 3331}
+  - name: Pez gordo naranja
+    spriteName: Pez gordo naranja
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c1554d4b79e492b46aac6068fc6bcc1a
+    layerID: 14
+    mosaicPosition: {x: 11550, y: 4}
+  - name: Fondo
+    spriteName: Fondo
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7a9044bc4e7275b4882e5ae9d340205c
+    layerID: 1
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0
+  textureAssetName: background_fish_HD - copia Texture
+  prefabAssetName: background_fish_HD - copia Prefab

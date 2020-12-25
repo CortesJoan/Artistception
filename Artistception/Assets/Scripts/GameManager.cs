@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -6,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager _instance;
     public int level = 0;
+    public PlayerBehaviour player;
     private void Awake()
     {
         if (GameManager._instance == null)
@@ -39,5 +41,17 @@ public class GameManager : MonoBehaviour
     {
         level++;
         ChangeLevel(level);
+    }
+
+    internal void KillPlayer()
+    {
+        Instantiate(player);
+        player.transform.position = this.transform.position;
+        //   player.transform.position = GetLastCheckPoint();
+    }
+
+    private Vector3 GetLastCheckPoint()
+    {
+        throw new NotImplementedException();
     }
 }
