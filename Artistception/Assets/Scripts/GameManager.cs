@@ -1,6 +1,7 @@
 ﻿using Cinemachine;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -29,13 +30,23 @@ public class GameManager : MonoBehaviour
     }
     public void OnLevelWasLoaded(int level)
     {
+        if (level == 2)
+        {
+            FindObjectOfType<Button>().GetComponent<Button>().onClick.AddListener(() => {
+                ChangeLevel(3);
+            });
+
+        }
+        if (level == 3) {
+            transform.position = new Vector3(2,9.88f,0);
+        }
         player = FindObjectOfType<PlayerBehaviour>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+     
     }
     public void ChangeLevel(int newLevel)
     {

@@ -105,13 +105,13 @@ public class PlayerBehaviour : MonoBehaviour
     /// </summary>
     public void InputHandler()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             inputList.Add(RIGHT);
 
 
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.A))
         {
             inputList.Add(LEFT);
 
